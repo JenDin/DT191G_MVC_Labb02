@@ -10,6 +10,8 @@ namespace AnimalAdoption.Controllers
 {
     public class AboutController : Controller
     {
+        [Route("/about")]
+        [Route("/about_us")]
         public IActionResult Index()
         {
             return View();

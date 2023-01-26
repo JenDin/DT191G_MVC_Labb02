@@ -10,11 +10,15 @@ namespace AnimalAdoption.Controllers
 {
     public class AnimalController : Controller
     {
+        [Route("/animals")]
+        [Route("/adopt")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("/sign_up")]
+        [Route("/register")]
         public IActionResult SignUp()
         {
             return View();
