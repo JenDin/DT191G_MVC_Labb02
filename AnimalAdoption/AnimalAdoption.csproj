@@ -12,12 +12,18 @@
     <None Remove="Controllers\" />
     <None Remove="Models\" />
     <None Remove="Views\" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Animal\" />
+    <None Remove="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
     <Folder Include="wwwroot\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Animal\" />
+    <Folder Include="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
