@@ -15,6 +15,7 @@
     <None Remove="Views\Home\" />
     <None Remove="Views\Animal\" />
     <None Remove="Views\About\" />
+    <None Remove="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -24,8 +25,13 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Animal\" />
     <Folder Include="Views\About\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\css\" />
+    <Content Remove="wwwroot\js\" />
   </ItemGroup>
 </Project>

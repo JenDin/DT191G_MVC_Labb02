@@ -1,0 +1,22 @@
+﻿/* Resets and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    padding-bottom: 10rem;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* HEADER / NAVIGATION */
