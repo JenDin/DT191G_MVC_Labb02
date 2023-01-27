@@ -20,10 +20,6 @@ body {
     font-family: "open-sans", sans-serif;
 }
 
-h1 {
-    margin-bottom: 100vh;
-}
-
 /* Navigation */
 .navbar {
     background: #d8e2dc;
@@ -152,10 +148,43 @@ h1 {
 }
 
     .container > p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.6;
         margin-bottom: 1rem;
     }
+
+/* About us */
+.about-section {
+    margin-top: 5rem;
+}
+
+.about-title {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.left-container > h2 {
+    margin-bottom: 1rem;
+}
+
+.left-container > p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.right-container > img {
+    width: 100%;
+}
 
 /* From 768px screens and up */
 @media screen and (min-width: 768px) {
@@ -186,7 +215,6 @@ h1 {
     }
 
     .hero-text {
-        /*        position: relative;*/
         top: 22rem;
     }
 
@@ -196,5 +224,34 @@ h1 {
 
     .hero-text > p {
         font-size: 4rem;
+    }
+
+    .container > p {
+        font-size: 1.2rem;
+    }
+
+    /* About us */
+    .about-title {
+        font-size: 2.5rem;
+    }
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .left-container {
+        width: 50%;
+        padding: 2rem;
+    }
+
+        .left-container > p {
+            font-size: 1.2rem;
+        }
+
+    .right-container {
+        width: 50%;
     }
 }
