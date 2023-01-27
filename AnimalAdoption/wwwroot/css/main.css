@@ -75,10 +75,6 @@ h1 {
     display: block;
 }
 
-h1 {
-    margin-bottom: 20rem;
-}
-
 /* Footer */
 .footer {
     background: #d8e2dc;
@@ -94,13 +90,13 @@ h1 {
         margin: .5rem;
     }
 
-    .footer ul li:hover {
-        text-decoration: underline;
-    }
+        .footer ul li:hover {
+            text-decoration: underline;
+        }
 
-    .footer ul li a {
-        color: #000;
-    }
+        .footer ul li a {
+            color: #000;
+        }
 
 .fa-brands {
     background: #84a59d;
@@ -117,9 +113,53 @@ h1 {
     margin-top: 1rem;
 }
 
+/* Front page */
+.home-section {
+    margin-bottom: 3rem;
+}
+
+.hero-img {
+    background-image: url("https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 40vh;
+}
+
+.hero-text {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 18rem;
+}
+
+    .hero-text > p {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+.home-title {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+    .container > p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
 
 /* From 768px screens and up */
 @media screen and (min-width: 768px) {
+    /* Navigation */
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -138,5 +178,23 @@ h1 {
 
     .toggle {
         display: none;
+    }
+
+    /* Front page */
+    .hero-img {
+        height: 60vh;
+    }
+
+    .hero-text {
+        /*        position: relative;*/
+        top: 22rem;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .hero-text > p {
+        font-size: 4rem;
     }
 }
