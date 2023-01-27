@@ -94,6 +94,10 @@ h1 {
         margin: .5rem;
     }
 
+    .footer ul li:hover {
+        text-decoration: underline;
+    }
+
     .footer ul li a {
         color: #000;
     }
