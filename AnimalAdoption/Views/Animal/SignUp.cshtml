@@ -38,23 +38,6 @@
                     <input asp-for="PhoneNo" />
                     <span class="form-error-msg" asp-validation-for="PhoneNo"></span>
                 </div>
-                @*<div class="form-item">
-                    <label asp-for="AnimalCategory"></label>
-                    <select class="category-select" asp-for="AnimalCategory">
-                        <option>Cat</option>
-                        <option>Dog</option>
-                        <option>Bunny</option>
-                        <option>Guinea pig</option>
-                        <option>Hamster</option>
-                    </select>
-                </div>*@
-                @*@foreach (var gender in Model.Genders)
-                {
-                    <div class="form-item">
-                        <label asp-for="Gender"></label>
-                        <input type="radio" asp-for="Gender" value="@gender"/> @gender <br /> 
-                    </div>
-                }*@
             <div class="form-item">
                 <label for="message">Message (optional)</label>
                 <textarea name="message" id="message" cols="30" rows="7"></textarea>
