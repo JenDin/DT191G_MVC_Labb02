@@ -60,12 +60,6 @@ body {
     width: 240px;
 }
 
-/*.logo {
-    display: inline-block;
-    margin: .8rem .8rem;
-    font-size: 1.8rem;
-}*/
-
 .toggle {
     position: absolute;
     top: 1.1rem;
@@ -206,14 +200,14 @@ body {
         color: rgba(255, 63, 4, 0.9);
     }
 
-    .cards {
-        max-width: 500px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-        padding: 1rem;
-    }
+.cards {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
 
 .card {
     background: rgba(255, 63, 4, 0.9);
@@ -243,6 +237,83 @@ body {
     .signup-text > p {
         margin-bottom: 1rem;
     }
+
+.form-container {
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid #0a1a4d;
+}
+
+    .form-container h3 {
+        text-transform: uppercase;
+        color: #0a1a4d;
+        margin-bottom: 0.7rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+        font-weight: 500;
+    }
+
+.form-item {
+    margin-bottom: 0.7rem;
+}
+
+label,
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #0a1a4d;
+}
+
+label {
+    margin-bottom: .2rem;
+}
+
+input,
+textarea {
+    border: 1px solid #0a1a4d;
+}
+
+input,
+select,
+textarea {
+    padding: .2rem;
+    background: #fafafad9;
+    resize: none;
+}
+
+.form-error-msg {
+    position: relative;
+    top: 1rem;
+    display: block;
+    margin-top: -.6rem;
+    margin-bottom: 2rem;
+    color: #d62828;
+    font-size: .9rem;
+}
+
+.form-btn {
+    background: rgba(255, 63, 4, 0.9);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-form-btn:active {
+    background: #000;
+}
 
 /* About us page */
 .about-section {
@@ -329,9 +400,9 @@ body {
         top: 22rem;
     }
 
-    .hero-text > p {
-        font-size: 5rem;
-    }
+        .hero-text > p {
+            font-size: 5rem;
+        }
 
     .container > p {
         font-size: 1.2rem;
@@ -357,6 +428,7 @@ body {
         margin: 0 auto;
         margin-top: 5rem;
     }
+
     .left-container {
         width: 50%;
         padding: 2rem;

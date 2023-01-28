@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AnimalAdoption.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,9 +19,20 @@ namespace AnimalAdoption.Controllers
         }
 
         [Route("/sign_up")]
-        [Route("/register")]
         public IActionResult SignUp()
         {
+            return View();
+        }
+
+        // Only listen for http requests
+        [HttpPost("/sign_up")]
+        public IActionResult SignUp(PersonModel model) // Accept an instance of the PersonModel
+        {
+            // Validate form input
+            if (ModelState.IsValid)
+            {
+
+            }
             return View();
         }
     }
