@@ -41,8 +41,7 @@ body {
     margin: 1.5rem auto;
 }
 
-.nav-link,
-.logo {
+.nav-link {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -52,11 +51,20 @@ body {
         text-decoration: underline;
     }
 
+.logo-container {
+    padding: .5rem .8rem;
+    padding-left: 1.5rem;
+}
+
 .logo {
+    width: 240px;
+}
+
+/*.logo {
     display: inline-block;
     margin: .8rem .8rem;
     font-size: 1.8rem;
-}
+}*/
 
 .toggle {
     position: absolute;
@@ -107,10 +115,12 @@ body {
 
 .footer-copyright {
     color: #fff;
+    margin-bottom: 1rem;
 }
 /* Titles */
 .home-title,
 .animal-title,
+.signup-title,
 .about-title {
     font-size: 1.7rem;
     text-align: center;
@@ -143,6 +153,10 @@ body {
         font-weight: 800;
     }
 
+.bestfriend {
+    color: #FF3F04;
+}
+
 .container {
     max-width: 800px;
     width: 90%;
@@ -159,25 +173,47 @@ body {
 
 /* Animals page */
 .animal-section {
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-bottom: 4rem;
 }
 
 .animal-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 1rem;
     color: #0a1a4d;
 }
 
-.cards {
-    max-width: 500px;
+.sign-up-container {
+    background: rgba(255, 63, 4, 0.9);
+    max-width: 150px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    padding: 1rem;
+    padding: .7rem 1rem;
+    text-align: center;
 }
+
+    .sign-up-container:hover {
+        background: #0a1a4d;
+    }
+
+.sign-up-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+    .sign-up-link:hover {
+        color: rgba(255, 63, 4, 0.9);
+    }
+
+    .cards {
+        max-width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
 
 .card {
     background: rgba(255, 63, 4, 0.9);
@@ -192,9 +228,25 @@ body {
     width: 100%;
 }
 
+/* Sign up page */
+.signup-section {
+    margin-top: 8rem;
+}
+
+.signup-text {
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
+    color: #0a1a4d;
+}
+
+    .signup-text > p {
+        margin-bottom: 1rem;
+    }
+
 /* About us page */
 .about-section {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .about-container {
@@ -244,6 +296,10 @@ body {
         display: none;
     }
 
+    .logo {
+        width: 310px;
+    }
+
     /* Footer */
     .footer {
         display: flex;
@@ -252,11 +308,16 @@ body {
         gap: 4rem;
     }
 
+    .footer-copyright {
+        margin-bottom: 0;
+    }
+
     /* Titles */
     .home-title,
     .animal-title,
+    .signup-title,
     .about-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     /* Front page */
@@ -269,7 +330,7 @@ body {
     }
 
     .hero-text > p {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .container > p {
@@ -285,7 +346,6 @@ body {
         gap: 1rem;
         padding: 1rem;
     }
-
 
     /* About us page */
     .about-container {

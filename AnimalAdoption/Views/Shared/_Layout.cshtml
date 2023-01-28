@@ -19,7 +19,9 @@
             <span class="toggle" id="toggle">
                 <i class="fas fa-bars"></i>
             </span>
-            <a href="#" class="logo">LOGO</a>
+            <div class="logo-container">
+                <a asp-controller="Home" asp-action="Index"><img class="logo" src="./logo.png" /></a>
+            </div>
             <ul class="nav-list" id="nav-list">
                 <li class="nav-item"><a asp-controller="Home" asp-action="Index" class="nav-link">Home</a></li>
                 <li class="nav-item"><a asp-controller="Animal" asp-action="Index" class="nav-link">Animals</a></li>
