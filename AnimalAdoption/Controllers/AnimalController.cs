@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AnimalAdoption.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,19 +22,31 @@ namespace AnimalAdoption.Controllers
         [Route("/sign_up")]
         public IActionResult SignUp()
         {
-            return View();
+            return View(new PersonModel());
         }
 
         // Only listen for http requests
         [HttpPost("/sign_up")]
-        public IActionResult SignUp(PersonModel model) // Accept an instance of the PersonModel
-        {
-            // Validate form input
-            if (ModelState.IsValid)
-            {
 
+        public IActionResult SignUp(PersonModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                // Read the JSON file and deserialize it into a list
+                var jsonStr = System.IO.File.ReadAllText("people.json");
+                var jsonObj = JsonConvert.DeserializeObject<List<PersonModel>>(jsonStr);
+
+                if(jsonObj != null)
+                {
+                    // Add the form data to the list and update the JSON file
+                    jsonObj.Add(model);
+                    System.IO.File.WriteAllText("people.json", JsonConvert.SerializeObject(jsonObj, Formatting.Indented));
+
+                    // Clear the form
+                    ModelState.Clear();
+                }
             }
-            return View();
+            return View(new PersonModel());
         }
     }
 }

@@ -9,7 +9,6 @@
 
     <div class="signup-text">
         <p>Thank you for your interest in saving a life by adopting a pet!</p>
-        @*<p>Fill in the form below and we will get in touch with you regarding the next steps.</p>*@
     </div>
 
     <div>
@@ -41,30 +40,35 @@
                     <span class="form-error-msg" asp-validation-for="PhoneNo"></span>
                 </div>
                 @*<div class="form-item">
-                    <label asp-for="AnimalCategory"></label>
-                    <select class="category-select" asp-for="AnimalCategory">
-                        <option>Cat</option>
-                        <option>Dog</option>
-                        <option>Bunny</option>
-                        <option>Guinea pig</option>
-                        <option>Hamster</option>
-                    </select>
-                </div>*@
-                @*@foreach (var gender in Model.Genders)
-                {
-                    <div class="form-item">
-                        <label asp-for="Gender"></label>
-                        <input type="radio" asp-for="Gender" value="@gender"/> @gender <br /> 
-                    </div>
-                }*@
+                        <label asp-for="AnimalCategory"></label>
+                        <select class="category-select" asp-for="AnimalCategory">
+                            <option>Cat</option>
+                            <option>Dog</option>
+                            <option>Bunny</option>
+                            <option>Guinea pig</option>
+                            <option>Hamster</option>
+                        </select>
+                    </div>*@
+
             <div class="form-item">
-                <label for="message">Message (optional)</label>
-                <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                <label asp-for="Gender"></label>
+                <div class="radio-container">
+                    @foreach (var gender in Model.Genders)
+                    {
+                        <input type="radio" asp-for="Gender" value="@gender" />@gender <br />
+                    }
+                </div>
+                <span class="form-error-msg" asp-validation-for="Gender"></span>
             </div>
+
+                <div class="form-item">
+                    <label for="message">Message (optional)</label>
+                    <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                </div>
                 <div class="form-item">
                     <button class="form-btn" aria-label="Send form">Sign up</button>
                 </div>
-            </form>
+</form>
         </article>
     </div>
 </section>

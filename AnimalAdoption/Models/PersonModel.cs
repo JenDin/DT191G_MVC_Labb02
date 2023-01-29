@@ -23,15 +23,16 @@ namespace AnimalAdoption.Models
         [Display(Name = "Phone number")]
         public string? PhoneNo { get; set; }
 
-        //[Required]
-        [Display(Name = "Animal category")]
-        public string? AnimalCategory { get; set; }
-
-        [BindProperty]
-        public string Gender { get; set; }
-        public string[] Genders = new[] { "Male", "Female" };
-
         public string? Message { get; set; }
+
+        //[Required]
+        //[Display(Name = "Animal category")]
+        //public string? AnimalCategory { get; set; }
+
+        [Required(ErrorMessage = "* Choose your gender")]
+        [BindProperty]
+        public string? Gender { get; set; }
+        public string[] Genders = new[] { "Male", "Female" };
 
     }
 }

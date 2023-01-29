@@ -16,6 +16,7 @@
     <None Remove="Views\Animal\" />
     <None Remove="Views\About\" />
     <None Remove="Views\Shared\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -33,5 +34,8 @@
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\css\" />
     <Content Remove="wwwroot\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 </Project>

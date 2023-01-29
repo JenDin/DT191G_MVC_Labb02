@@ -301,6 +301,19 @@ textarea {
     resize: none;
 }
 
+.radio-container {
+    display: flex;
+    width: 120px;
+    gap: .5rem;
+    color: #0a1a4d;
+    margin-bottom: 1.rem;
+}
+
+radio {
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
 .form-error-msg {
     position: relative;
     top: 1rem;
