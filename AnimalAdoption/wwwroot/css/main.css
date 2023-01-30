@@ -26,7 +26,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: 1rem;
     z-index: 1;
 }
@@ -207,11 +207,11 @@ body {
         color: rgba(255, 63, 4, 0.9);
     }
 
-    /* Animals page */
-    .animal-section {
-        margin-top: 8rem;
-        margin-bottom: 4rem;
-    }
+/* Animals page */
+.animal-section {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
 
 .animal-text {
     font-size: 1.2rem;
@@ -222,7 +222,7 @@ body {
 
 .sign-up-container {
     background: rgba(255, 63, 4, 0.9);
-    max-width: 300px;
+    max-width: 200px;
     margin: 0 auto;
     padding: .7rem 1rem;
     text-align: center;
@@ -236,7 +236,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
     .sign-up-link:hover {
@@ -388,6 +388,7 @@ radio {
     width: 90%;
     margin: 0 auto;
     margin-top: 1rem;
+    margin-bottom: 3rem;
     padding: 1rem;
     padding-top: 3rem;
 }
