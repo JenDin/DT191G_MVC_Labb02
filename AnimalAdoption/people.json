@@ -1,28 +1,11 @@
 [
   {
-    "Genders": [
-      "Male",
-      "Female"
-    ],
-    "FirstName": "Jenny",
-    "LastName": "Dinh",
-    "Email": "jennydinh94@gmail.com",
-    "PhoneNo": "793356502",
-    "AnimalCategory": "Cat",
-    "Gender": "Female",
-    "Message": null
-  },
-  {
-    "Genders": [
-      "Male",
-      "Female"
-    ],
     "FirstName": "Jenny",
     "LastName": "Dinh",
     "Email": "jennydinh94@gmail.com",
     "PhoneNo": "793356502",
     "AnimalCategory": "Bunny",
     "Gender": "Female",
-    "Message": null
+    "Message": "Hejj"
   }
 ]

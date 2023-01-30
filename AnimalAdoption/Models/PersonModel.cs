@@ -38,6 +38,7 @@ namespace AnimalAdoption.Models
         [Required(ErrorMessage = "* Choose your gender")]
         [BindProperty]
         public string? Gender { get; set; }
+        [Newtonsoft.Json.JsonIgnore]
         public string[] Genders = new[] { "Male", "Female" };
 
         // Message
