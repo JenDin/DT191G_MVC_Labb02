@@ -170,19 +170,48 @@ body {
     }
 
 .adopter-list-container {
-    background: pink;
+    max-width: 770px;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
-.adopter-list-container {
-    font-size: .9rem;
+    .adopter-list-container > h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+.adopter-list {
+    list-style: none;
 }
-/* Animals page */
-.animal-section {
-    margin-top: 8rem;
-    margin-bottom: 4rem;
+
+.adopt-container {
+    margin-top: 1rem;
+    background: rgba(255, 63, 4, 0.9);
+    width: 100px;
+    padding: .5rem 1rem;
+    text-align: center;
 }
+
+    .adopt-container:hover {
+        background: #0a1a4d;
+    }
+
+    .adopt-link {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .adopt-link:hover {
+        color: rgba(255, 63, 4, 0.9);
+    }
+
+    /* Animals page */
+    .animal-section {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
 
 .animal-text {
     font-size: 1.2rem;
@@ -315,7 +344,7 @@ textarea {
     width: 120px;
     gap: .5rem;
     color: #0a1a4d;
-    margin-bottom: 1.rem;
+    margin-bottom: 1rem;
 }
 
 radio {

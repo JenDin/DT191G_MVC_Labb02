@@ -19,4 +19,17 @@
         <p>Here at Tiny Friends Sanctuary we would like to encourage you to add a pet to your family. Adopting an animal can change your as well as the animals whole world for the better. Not only do animals give you unconditional love, but they have been shown to be psychologically, emotionally and physically beneficial to their companions. Caring for a pet can provide a sense of purpose and fulfillment and lessen feelings of loneliness.</p>
         <p>When you adopt, you can also feel proud about helping an animal in need. As well as giving an animal a safe and warm home you are giving a tiny soul a chance to a happy life. In addition you are also helping to change societies attitude and encouraging others to adopt. For every animal that gets adopted, we will able to help another homeless animal find its forever home.</p>
     </div>
+
+    <div class="adopter-list-container">
+        <h2>Latest people to sign up for adopting a tiny friend:</h2>
+        @foreach (var person in Model)
+        {
+            <ul class="adopter-list">
+                <li>- @person.FirstName</li>
+            </ul>
+        }
+
+        <div class="adopt-container"><a class="adopt-link" asp-controller="Animal" asp-action="SignUp">Sign up</a></div>
+
+    </div>
 </section>
