@@ -17,6 +17,7 @@
     <None Remove="Views\About\" />
     <None Remove="Views\Shared\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Models\Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -29,6 +30,7 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\js\" />
+    <Folder Include="Models\Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

@@ -111,10 +111,10 @@ body {
         color: #0a1a4d;
     }
 
-    .footer-copyright {
-        color: #fff;
-        margin-bottom: 1rem;
-    }
+.footer-copyright {
+    color: #fff;
+    margin-bottom: 1rem;
+}
 /* Titles */
 .home-title,
 .animal-title,
@@ -169,6 +169,15 @@ body {
         color: #0a1a4d;
     }
 
+.adopter-list-container {
+    background: pink;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.adopter-list-container {
+    font-size: .9rem;
+}
 /* Animals page */
 .animal-section {
     margin-top: 8rem;
@@ -262,7 +271,7 @@ body {
     }
 
 .form-text {
-     color: #0a1a4d;
+    color: #0a1a4d;
 }
 
 .form-container > div {
