@@ -16,6 +16,7 @@ namespace AnimalAdoption.Controllers
         [Route("/home")]
         public IActionResult Index()
         {
+            // Read the JSON data and deserialize it - then send it to the view
             var jsonStr = System.IO.File.ReadAllText("people.json");
             var jsonObj = JsonConvert.DeserializeObject<List<PersonModel>>(jsonStr);
 

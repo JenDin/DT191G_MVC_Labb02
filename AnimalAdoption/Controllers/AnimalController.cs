@@ -13,6 +13,7 @@ namespace AnimalAdoption.Controllers
 {
     public class AnimalController : Controller
     {
+        // Animals
         [Route("/animals")]
         [Route("/adopt")]
         public IActionResult Index()
@@ -20,24 +21,27 @@ namespace AnimalAdoption.Controllers
             return View();
         }
 
+        // Sign up
         [Route("/sign_up")]
         public IActionResult SignUp()
         {
             return View(new PersonModel());
         }
 
-        // Only listen for http requests
+        // Sign up - only listen for http post requests
         [HttpPost("/sign_up")]
 
         public IActionResult SignUp(PersonModel model)
         {
             if (ModelState.IsValid)
             {
+                // Read and deserialize JSON data to a list
                 var jsonStr = System.IO.File.ReadAllText("people.json");
                 var jsonObj = JsonConvert.DeserializeObject<List<PersonModel>>(jsonStr);
 
                 if (jsonObj != null)
                 {
+                    // Add the form data to the list and serialize/update the JSON data
                     jsonObj.Add(model);
                     System.IO.File.WriteAllText("people.json", JsonConvert.SerializeObject(jsonObj, Formatting.Indented));
 

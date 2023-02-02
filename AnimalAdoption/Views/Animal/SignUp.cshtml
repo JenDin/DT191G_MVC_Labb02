@@ -46,13 +46,11 @@
                 </div>
 
                 <!-- Animal category -->
-
                 <div class="form-item">
                     <label asp-for="AnimalCategory"></label>
                     @Html.DropDownListFor(m => m.AnimalCategory, new SelectList(Enum.GetValues(typeof(Category))))
                     <span class="form-error-msg" asp-validation-for="AnimalCategory"></span>
                 </div>
-
 
                 <!-- Gender -->
                 <div class="form-item">
